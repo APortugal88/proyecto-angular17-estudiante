@@ -27,7 +27,7 @@ export class NuevoUsuarioComponent implements OnInit {
       , Validators.min(1)]),
     carrera: new FormControl(''
     , [Validators.required
-    , Validators.maxLength(15)])
+    , Validators.maxLength(30)])
   });
 
   idEstudiante!: string;
