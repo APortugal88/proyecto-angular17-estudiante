@@ -1,0 +1,38 @@
+<app-navbar></app-navbar>
+<section>
+    <form [formGroup]="formEstudiante" (ngSubmit)="guardarEstudiante()">
+        
+        <mat-form-field>
+            <mat-label for="Nombre">Nombre</mat-label>
+            <input matInput type="text" formControlName="nombre">
+            <mat-error *ngIf="formEstudiante.get('nombre')?.hasError('required')">El nombre es requerido</mat-error>
+            <mat-error *ngIf="formEstudiante.get('nombre')?.hasError('maxlength')">El nombre debe tener máximo 30 caracteres</mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label for="Apellido">Apellido</mat-label>
+            <input matInput type="text" formControlName="apellido">
+            <mat-error *ngIf="formEstudiante.get('apellido')?.hasError('required')">El apellido es requerido</mat-error>
+            <mat-error *ngIf="formEstudiante.get('apellido')?.hasError('maxlength')">El apellido debe tener máximo 30 caracteres</mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label for="Edad">Edad</mat-label>
+            <input matInput type="number" formControlName="edad">
+            <mat-error *ngIf="formEstudiante.get('edad')?.hasError('required')">La edad es requerida</mat-error>
+            <mat-error *ngIf="formEstudiante.get('edad')?.hasError('min')">La edad debe ser mayor a 0</mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label for="Carrera">Carrera</mat-label>
+            <input matInput type="text" formControlName="carrera">
+            <mat-error *ngIf="formEstudiante.get('carrera')?.hasError('required')">La carrera es requerida</mat-error>
+            <mat-error *ngIf="formEstudiante.get('carrera')?.hasError('maxlength')">La carrera debe tener máximo 15 caracteres</mat-error>
+        </mat-form-field>
+
+        <button mat-raised-button color="primary" type="submit">Guardar</button>
+        <button mat-raised-button color="warn" type="button" (click)="cancelarEstudiante()">Cancelar</button>
+
+    </form>
+    
+</section>

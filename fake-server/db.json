@@ -1,0 +1,74 @@
+{
+  "estudiantes": [
+    {
+      "id": "1",
+      "nombre": "Christian",
+      "apellido": "Tudela",
+      "edad": 19,
+      "carrera": "Economia"
+    },
+    {
+      "id": "2",
+      "nombre": "Rodrigo",
+      "apellido": "Poma",
+      "edad": 18,
+      "carrera": "Economia"
+    },
+    {
+      "id": "3",
+      "nombre": "David",
+      "apellido": "Quiroz",
+      "edad": 19,
+      "carrera": "Ingenieria Industrial"
+    },
+    {
+      "id": "4",
+      "nombre": "Karen",
+      "apellido": "Callisaya",
+      "edad": 19,
+      "carrera": "Ingenieria Industrial"
+    },
+    {
+      "id": "5",
+      "nombre": "Rodolfo",
+      "apellido": "Calamani",
+      "edad": 20,
+      "carrera": "Informatica"
+    },
+    {
+      "id": "6",
+      "nombre": "Gary",
+      "apellido": "Huanca",
+      "edad": 19,
+      "carrera": "Informatica"
+    },
+    {
+      "id": "7",
+      "nombre": "Vanessa",
+      "apellido": "Pereyra",
+      "edad": 20,
+      "carrera": "Informatica"
+    },
+    {
+      "id": "8",
+      "nombre": "Hebert",
+      "apellido": "Huanca",
+      "edad": 20,
+      "carrera": "Ingenieria Electronica"
+    },
+    {
+      "id": "9",
+      "nombre": "Alex",
+      "apellido": "Maldonado",
+      "edad": 18,
+      "carrera": "Ingenieria Electronica"
+    },
+    {
+      "id": "10",
+      "nombre": "Anahi",
+      "apellido": "Tambo",
+      "edad": 21,
+      "carrera": "Ingenieria Civil"
+    }
+  ]
+}
